@@ -3,7 +3,8 @@ body > #root > div {
 }
 
 body {
-  margin: 0;
+  margin: auto;
+  width: 50%;
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
