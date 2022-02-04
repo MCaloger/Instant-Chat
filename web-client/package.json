@@ -1,5 +1,5 @@
 {
-  "name": "react-chat",
+  "name": "instant-chat",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,7 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postBuild": "del /f /s /q C:\\Users\\admin\\Documents\\code\\react-chat\\server\\build && rmdir C:\\Users\\admin\\Documents\\code\\react-chat\\server\\build xcopy /E C:\\Users\\admin\\Documents\\code\\react-chat\\build C:\\Users\\admin\\Documents\\code\\react-chat\\server\\build",
+    "postBuild": "del /f /s /q ..\\server\\build && rmdir ..\\server\\build xcopy /E ..\\build ..\\server\\build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

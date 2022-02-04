@@ -31,8 +31,7 @@ export default function AppHeader() {
     return (
         <div>
             <HeaderContainer>
-                <HeaderText>React + Typescript + Socket.IO + ExpressJS Chat</HeaderText>
-                <HeaderSignIn>{signedIn ? <div>Log Out</div> : <div>Sign In</div>}</HeaderSignIn>
+                <HeaderText>Instant Chat</HeaderText>
             </HeaderContainer>
         </div>
     )

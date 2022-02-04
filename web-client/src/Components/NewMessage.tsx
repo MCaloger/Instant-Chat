@@ -9,6 +9,12 @@ const NewMessageContainer = styled.div`
     width: 100%;
     background: #2196F3;
     display: flex;
+    flex-direction: column;
+    background: white;
+    &>* {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 `
 const NewMessagEntry = styled.textarea`
     width: 100%;
@@ -17,7 +23,7 @@ const NewMessagEntry = styled.textarea`
     resize: none;
 `
 
-export default function NewMessage() {
+export default function NewMessage(props) {
 
     const [message, setMessage] = useState('');
 
@@ -34,7 +40,7 @@ export default function NewMessage() {
     return (
         <div>
             <NewMessageContainer>
-                <NewMessagEntry placeholder="Enter message here" onChange={e => setMessage(e.target.value)} onKeyUp={handleEnterPress} value={message}></NewMessagEntry>
+                <NewMessagEntry placeholder={`You are ${props.name}, enter message here.`} onChange={e => setMessage(e.target.value)} onKeyUp={handleEnterPress} value={message}></NewMessagEntry>
             </NewMessageContainer>
         </div>
     )
